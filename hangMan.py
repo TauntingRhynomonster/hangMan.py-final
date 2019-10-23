@@ -24,7 +24,7 @@ else:
 	print("Not the word that I'm thinking of")
 
 while True:
-	while count < 7:
+	while misses < 7:
 		print(hangman[misses])
 		print(secret)
 		guess = input("Pick a letter: ")
@@ -34,9 +34,6 @@ while True:
 		else:
 			print("That letter is not in the word")
 			misses = misses + 1
-		for x in myList:
-			if x == choice:
-				pass
 
 
 
